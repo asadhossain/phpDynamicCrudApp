@@ -11,7 +11,13 @@
     <title>php Dynamic Crud App!</title>
   </head>
   <body>
-    container
+    <div class="container my-4 p-4 shadow">
+        <h2><a href="index.php">Asad Dynamic Crud App</a></h2>
+        <form action="" method= "POST" enctype ></form>
+
+
+
+    </div>
 
 
 
