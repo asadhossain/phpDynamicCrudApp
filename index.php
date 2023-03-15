@@ -34,7 +34,26 @@
 
 
     <div class="container my-4 p-4 shadow">
-       
+       <table class="table table-responsive">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Roll</th>
+                <th>Image</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <td>1</td>
+                <td>Asad</td>
+                <td>Email.com</td>
+                <td></td>
+                <td>
+                <a class="btn btn-success" href="#">Edit</a>
+                <a class="btn btn-warning" href="#">Delete</a>
+                </td>
+            </tbody>
+
+       </table>
 
 
 
