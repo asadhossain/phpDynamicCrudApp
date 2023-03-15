@@ -13,7 +13,12 @@
   <body>
     <div class="container my-4 p-4 shadow">
         <h2><a href="index.php">Asad Dynamic Crud App</a></h2>
-        <form action="" method= "POST" enctype ></form>
+        <form class= "form" action="" method= "POST" enctype="multipart/form-data" >
+            <input class="form-control mb-2" type="text" name="std_name" placeholder="Enter Your Name">
+
+
+
+        </form>
 
 
 
