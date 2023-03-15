@@ -34,23 +34,7 @@
 
 
     <div class="container my-4 p-4 shadow">
-        <h2><a style="text-decoration: none;"   href="index.php">Asad Dynamic Crud App</a></h2>
-        <form class= "form" action="" method= "POST" enctype="multipart/form-data" >
-            <input class="form-control mb-2" type="text" name="std_name" placeholder="Enter Your Name">
-
-            <input class="form-control mb-2" type="email" name="std_email" placeholder="Enter Your Email">
-
-            <input class="form-control mb-2" type="number" name="std_roll" placeholder="Enter Your Roll">
-
-            <label class="mb-2" for="image">Upload Your Image</label>
-
-            <input class="form-control mb-2" type="file" name="std_img">
-
-            <input class="form-control mb-2 bg-warning" type="submit" value="Add Information" name="add_info">
-
-
-
-        </form>
+       
 
 
 
