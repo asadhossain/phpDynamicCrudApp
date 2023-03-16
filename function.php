@@ -22,10 +22,10 @@
                 $std_name = $data['std_name'];
                 $std_email = $data['std_email'];
                 $std_roll = $data['std_roll'];
-                $std_img = $_FILES['std_img']['std_img'];
+                $std_img = $_FILES['std_img']['name'];
                 $tmp_name = $_FILES['std_img']['tmp_name'];
 
-                $query = "INSERT INTO students(std_name, std_email, std_roll, std_img) VALUE('$std_name', '$std_email', $std_roll, $std_img )";
+                $query = "INSERT INTO students(std_name, std_email, std_roll, std_img) VALUE('$std_name', '$std_email', $std_roll, '$std_img')";
 
                 if(mysqli_query($this->conn, $query)){
                     return "Informatiton Added Succesfully";
