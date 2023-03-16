@@ -25,7 +25,8 @@
                 $std_img = $_FILES['std_img']['std_img'];
                 $tmp_name = $_FILES['std_img']['tmp_name'];
 
-                $query = "INSERT INTO students(std_name, std_email, std_roll,std_img) VALUE('$std_name', '$std_email', $std_roll, $std_img )";
+                $query = "INSERT INTO students(std_name, std_email, std_roll, std_img) VALUE('$std_name', '$std_email', $std_roll, $std_img )";
+
                 if(mysqli_qury($this->conn, $query)){
                     return "Informatiton Added Succesfully";
                 }
