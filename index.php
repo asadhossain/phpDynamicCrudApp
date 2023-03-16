@@ -4,7 +4,7 @@
 
 
     if(isset($_POST['add_info'])){
-    $objCrudAdmin->add_data($_POST);
+      $return_mgs =  $objCrudAdmin->add_data($_POST);
 
 
    }
@@ -38,6 +38,8 @@
   <body>
     <div class="container my-4 p-4 shadow">
         <h2><a style="text-decoration: none;"   href="index.php">Asad Dynamic Crud App</a></h2>
+
+        <?php if(isset($return_mgs)) { echo $return_mgs; } ?>
         <form class= "form" action="" method= "POST" enctype="multipart/form-data" >
             <input class="form-control mb-2" type="text" name="std_name" placeholder="Enter Your Name">
 

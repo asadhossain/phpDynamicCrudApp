@@ -27,7 +27,7 @@
 
                 $query = "INSERT INTO students(std_name, std_email, std_roll, std_img) VALUE('$std_name', '$std_email', $std_roll, $std_img )";
 
-                if(mysqli_qury($this->conn, $query)){
+                if(mysqli_query($this->conn, $query)){
                     return "Informatiton Added Succesfully";
                 }
 
