@@ -21,7 +21,8 @@
                 $std_name = $data['std_name'];
                 $std_email = $data['std_email'];
                 $std_roll = $data['std_roll'];
-                
+                $std_img = $_FILES['std_img']['std_img'];
+
 
 
             }
