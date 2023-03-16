@@ -14,10 +14,14 @@
             if(!$this->conn){
                 die("Database Connection Error!!");
             }
-            }
-            
 
+         }
             
+         public function add_data($data){
+            
+         }
+
+
 
         }
 

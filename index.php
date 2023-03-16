@@ -3,7 +3,13 @@
   $objCrudAdmin = new crudApp();
 
 
-  if(isset($_POST[]))
+  if(isset($_POST['add_info'])){
+    $objCrudAdmin->add_data($_POST)
+
+
+
+
+  }
 
 
 
