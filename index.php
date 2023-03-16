@@ -1,5 +1,5 @@
 <?php
-  include("finction.php");
+  include("function.php");
   $objCrudAdmin = new crudApp();
 
 
