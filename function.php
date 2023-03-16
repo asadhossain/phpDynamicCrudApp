@@ -4,18 +4,20 @@
             private $conn;
 
             public function __construct(){
-            #database host, database user, database pass, database name.
+                #database host, database user, database pass, database name.
             $dbhost = 'localhost';
             $dbuser = 'root';
             $dbpass = "";
             $dbname = 'asaddynamiccrudapp'; 
 
             $this->conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
-            if(!$$this->conn){
+            if(!$this->conn){
                 die("Database Connection Error!!");
             }
-
             }
+            
+
+            
 
         }
 
