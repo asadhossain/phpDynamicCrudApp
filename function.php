@@ -1,7 +1,7 @@
 <?php
-        class crudApp{
+    class crudApp{
 
-            private $conn;
+        private $conn;
 
             public function __construct(){
                 #database host, database user, database pass, database name.
@@ -17,13 +17,18 @@
 
          }
             
-         public function add_data($data){
-            
-         }
+            public function add_data($data){
+                $std_name = $data['std_name'];
+                $std_email = $data['std_email'];
+                $std_roll = $data['std_roll'];
+                
+
+
+            }
 
 
 
-        }
+    }
 
 
 
