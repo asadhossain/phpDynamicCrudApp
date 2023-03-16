@@ -11,7 +11,9 @@
             $dbname = "phpdynamiccrudapp";
 
             $this->conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname );
-
+            if(!$$this->conn){
+                die("Database Connection Error!!");
+            }
 
 
 
