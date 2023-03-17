@@ -12,6 +12,15 @@
 
 
 
+
+
+        if (isset($_GET['status'])){
+            if($_GET['status'='edit']){
+                $id = $_GET['id'];
+            }
+        }
+
+
 ?>
 
 
