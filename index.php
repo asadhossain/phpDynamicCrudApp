@@ -78,8 +78,8 @@
                 <td><?php echo $student['std_roll']; ?> </td>
                 <td> <img style="height: 100px;"  src="upload/<?php echo $student['std_img']; ?>" > </td>
                 <td>
-                <a class="btn btn-success" href="#">Edit</a>
-                <a class="btn btn-warning" href="#">Delete</a>
+                <a class="btn btn-success" href="edit.php?status=edit&&id=<?php echo $student['id']; ?>">Edit</a>
+                <a class="btn btn-warning" href="edit.php?status=dekete&&id=<?php echo $student['id']; ?>">Delete</a>
                 </td>
              </tr>
              <?php } ?>
