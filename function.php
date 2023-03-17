@@ -52,6 +52,15 @@
                 }
             }
 
+            public function update_data($data){
+                $std_name= $data['u_std_name'];
+                $std_email= $data['u_std_email'];
+                $std_roll= $data['u_std_roll'];
+                $std_name= $data['u_std_name'];
+
+
+            }
+
 
 
     }
