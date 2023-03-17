@@ -12,8 +12,8 @@
         }
 
         if(isset($_POST['edit_btn'])){
-            
-        } $objCrudAdmin->update_data($_POST);
+            $mgs = $objCrudAdmin->update_data($_POST);
+        } 
 
 
 
@@ -44,7 +44,7 @@
     <div class="container my-4 p-4 shadow">
         <h2><a style="text-decoration: none;"   href="index.php">Asad Dynamic Crud App</a></h2>
 
-        <?php if(isset($return_mgs)) { echo $return_mgs; } ?>
+        <?php if(isset($mgs)) { echo $mgs; } ?>
         <form class= "form" action="" method= "POST" enctype="multipart/form-data" >
             <input class="form-control mb-2" type="text" name="u_std_name" value="<?php echo $returndata['std_name']; ?>">
 

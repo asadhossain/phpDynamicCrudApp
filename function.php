@@ -56,7 +56,16 @@
                 $std_name= $data['u_std_name'];
                 $std_email= $data['u_std_email'];
                 $std_roll= $data['u_std_roll'];
-                $std_name= $data['u_std_name'];
+                $idno= $data['std_id'];
+                $std_img = $_FILES['u_std_img']['name'];
+                $tmp_name = $_FILES ['u_std_imgu']['tmp_name'];
+
+                $query = "UPDATE students SET std_name = '$std_name', std_email = '$std_email', std_roll = '$std_roll', std_img = '$std_img' WHERE id= '$idno'";
+
+                if(mysqli_query($this->conn, $query)){
+                    move_uploaded_file($tmp_name, 'upload/'.$std_img);
+                    return "Information Updated Successfully";
+                }
 
 
             }
