@@ -71,7 +71,10 @@
             }
 
             public function delete_data($id){
-                
+                $query = "DELETE FROM students WHERE id=$id";
+                if(mysqli_query($this->conn, $query)){
+                    return "Deleted Data Successfully";
+                }
             }
 
 
