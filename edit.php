@@ -43,7 +43,7 @@
         <form class= "form" action="" method= "POST" enctype="multipart/form-data" >
             <input class="form-control mb-2" type="text" name="u_std_name" value="<?php echo $returndata['std_name']; ?>">
 
-            <input class="form-control mb-2" type="text" name="u_std_email" value="<?php echo $returndata['std_emali']; ?>">
+            <input class="form-control mb-2" type="text" name="u_std_email" value="<?php echo $returndata['std_email']; ?>">
 
             <input class="form-control mb-2" type="number" name="u_std_roll" value="<?php echo $returndata['std_roll']; ?>">
 
