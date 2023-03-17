@@ -1,17 +1,11 @@
 <?php
   include("function.php");
   $objCrudAdmin = new crudApp();
-
-
  
   $students = $objCrudAdmin->display_data();
 
-
-
-
-
         if (isset($_GET['status'])){
-            if($_GET['status']=['edit']){
+            if($_GET['status']='edit'){
                 $id = $_GET['id'];
                $returndata = $objCrudAdmin-> display_data_by_id($id);
             }
