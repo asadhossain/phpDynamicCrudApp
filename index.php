@@ -8,7 +8,7 @@
 
 
    }
-
+  $students = $objCrudAdmin->display_data();
 
 
 
@@ -70,14 +70,19 @@
                 <th>Action</th>
             </thead>
             <tbody>
-                <td>1</td>
-                <td>Asad</td>
-                <td>Email.com</td>
-                <td></td>
+             <tr> 
+              <?php while($student=mysqli_fetch_assoc($students))  { ?>
+                <td><?php echo $student['id']; ?> </td>
+                <td><?php echo $student['std_name']; ?> </td>
+                <td> <?php echo $student['std_email']; ?> </td>
+                <td><?php echo $student['std_roll']; ?> </td>
+                <td> <img style="height: 100px;"  src="upload/<?php echo $student['std_img']; ?>" > </td>
                 <td>
                 <a class="btn btn-success" href="#">Edit</a>
                 <a class="btn btn-warning" href="#">Delete</a>
                 </td>
+             </tr>
+             <?php } ?>
             </tbody>
 
        </table>
