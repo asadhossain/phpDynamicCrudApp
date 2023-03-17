@@ -13,7 +13,8 @@
   if (isset($_GET['status'])){
     if($_GET['status']= 'delete'){
       $delete_id = $_GET['id'];
-      $objCrudAdmin->delete_data($delete_id);
+      $deleted_info = $objCrudAdmin->delete_data($delete_id);
+
     }
   }
 
@@ -45,6 +46,7 @@
   <body>
     <div class="container my-4 p-4 shadow">
         <h2><a style="text-decoration: none;"   href="index.php">Asad Dynamic Crud App</a></h2>
+        <?php if(isset($deleted_info)) { echo $deleted_info; } ?>
 
         <?php if(isset($return_mgs)) { echo $return_mgs; } ?>
         <form class= "form" action="" method= "POST" enctype="multipart/form-data" >

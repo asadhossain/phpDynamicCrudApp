@@ -78,6 +78,7 @@
 
                 $query = "DELETE FROM students WHERE id=$id";
                 if(mysqli_query($this->conn, $query)){
+                    unlink('upload/'.$deleteImgData);
                     return "Deleted Data Successfully";
                 }
             }
