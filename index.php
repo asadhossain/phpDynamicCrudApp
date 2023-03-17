@@ -43,7 +43,7 @@
         <form class= "form" action="" method= "POST" enctype="multipart/form-data" >
             <input class="form-control mb-2" type="text" name="std_name" placeholder="Enter Your Name">
 
-            <input class="form-control mb-2" type="email" name="std_email" placeholder="Enter Your Email">
+            <input class="form-control mb-2" type="text" name="std_email" placeholder="Enter Your Email">
 
             <input class="form-control mb-2" type="number" name="std_roll" placeholder="Enter Your Roll">
 
