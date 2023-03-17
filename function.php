@@ -58,7 +58,7 @@
                 $std_roll= $data['u_std_roll'];
                 $idno= $data['std_id'];
                 $std_img = $_FILES['u_std_img']['name'];
-                $tmp_name = $_FILES ['u_std_imgu']['tmp_name'];
+                $tmp_name = $_FILES ['u_std_img']['tmp_name'];
 
                 $query = "UPDATE students SET std_name = '$std_name', std_email = '$std_email', std_roll = '$std_roll', std_img = '$std_img' WHERE id= '$idno'";
 
