@@ -10,6 +10,13 @@
    }
   $students = $objCrudAdmin->display_data();
 
+  if (isset($_GET['status'])){
+    if($_GET['status']= 'delete'){
+      $delete_id = $_GET['id'];
+      $objCrudAdmin->delete_data($delete_id);
+    }
+  }
+
 
 
 ?>
@@ -79,7 +86,7 @@
                 <td> <img style="height: 100px;"  src="upload/<?php echo $student['std_img']; ?>" > </td>
                 <td>
                 <a class="btn btn-success" href="edit.php?status=edit&&id=<?php echo $student['id']; ?>">Edit</a>
-                <a class="btn btn-warning" href="edit.php?status=dekete&&id=<?php echo $student['id']; ?>">Delete</a>
+                <a class="btn btn-warning" href="?status=delete&&id=<?php echo $student['id']; ?>">Delete</a>
                 </td>
              </tr>
              <?php } ?>

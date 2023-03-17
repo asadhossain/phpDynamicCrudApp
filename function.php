@@ -70,6 +70,10 @@
 
             }
 
+            public function delete_data($id){
+                
+            }
+
 
 
     }
