@@ -74,11 +74,11 @@
                 $catch_img = "SELECT * FROM students WHERE id=$id";
                 $delete_std_info = mysqli_query($this->conn, $catch_img);
                 $std_info_Delete = mysqli_fetch_assoc($delete_std_info);
-                $deleteImgData = $std_info_Delete['std_img'];
+                $deleteImg_Data = $std_info_Delete['std_img'];
 
                 $query = "DELETE FROM students WHERE id=$id";
                 if(mysqli_query($this->conn, $query)){
-                    unlink('upload/'.$deleteImgData);
+                    unlink('upload/'.$deleteImg_Data);
                     return "Deleted Data Successfully";
                 }
             }

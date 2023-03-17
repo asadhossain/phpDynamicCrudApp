@@ -10,7 +10,7 @@
    }
   $students = $objCrudAdmin->display_data();
 
-  if (isset($_GET['status'])){
+  if(isset($_GET['status'])){
     if($_GET['status']= 'delete'){
       $delete_id = $_GET['id'];
       $deleted_info = $objCrudAdmin->delete_data($delete_id);
