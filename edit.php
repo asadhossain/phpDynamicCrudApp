@@ -11,9 +11,9 @@
 
 
         if (isset($_GET['status'])){
-            if($_GET['status'='edit']){
+            if($_GET['status']=['edit']){
                 $id = $_GET['id'];
-               $returndata = $objCrudAdmin-> display_data_by_id($id)
+               $returndata = $objCrudAdmin-> display_data_by_id($id);
             }
         }
 
@@ -47,11 +47,11 @@
 
         <?php if(isset($return_mgs)) { echo $return_mgs; } ?>
         <form class= "form" action="" method= "POST" enctype="multipart/form-data" >
-            <input class="form-control mb-2" type="text" name="u_std_name" placeholder="Enter Your Name">
+            <input class="form-control mb-2" type="text" name="u_std_name" value="<?php echo $returndata['std_name']?>">
 
-            <input class="form-control mb-2" type="email" name="u_std_email" placeholder="Enter Your Email">
+            <input class="form-control mb-2" type="email" name="u_std_email" value="<?php echo $returndata['std_emali']?>">
 
-            <input class="form-control mb-2" type="number" name="u_std_roll" placeholder="Enter Your Roll">
+            <input class="form-control mb-2" type="number" name="u_std_roll" value="<?php echo $returndata['std_roll']?>">
 
             <label class="mb-2" for="image">Upload Your Image</label>
 
