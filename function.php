@@ -43,6 +43,15 @@
             }
 
 
+            public function display_data_by_id($id){
+                $query = "SELECT * FROM students WHERE id=$id";
+                if(mysqli_query($this->conn, $query)){
+                    $returndata = mysqli_query($this->conn, $query);
+                    return $returndata;
+                }
+            }
+
+
 
     }
 
