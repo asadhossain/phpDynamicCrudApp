@@ -47,7 +47,8 @@
                 $query = "SELECT * FROM students WHERE id=$id";
                 if(mysqli_query($this->conn, $query)){
                     $returndata = mysqli_query($this->conn, $query);
-                    return $returndata;
+                    $studentData = mysqli_fetch_assoc($returndata);
+                    return $studentData;
                 }
             }
 

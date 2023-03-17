@@ -3,11 +3,7 @@
   $objCrudAdmin = new crudApp();
 
 
-    if(isset($_POST['add_info'])){
-      $return_mgs =  $objCrudAdmin->add_data($_POST);
-
-
-   }
+ 
   $students = $objCrudAdmin->display_data();
 
 
@@ -17,6 +13,7 @@
         if (isset($_GET['status'])){
             if($_GET['status'='edit']){
                 $id = $_GET['id'];
+               $returndata = $objCrudAdmin-> display_data_by_id($id)
             }
         }
 
